@@ -1,4 +1,4 @@
 <template name="notepad">
-  <h2>Notepad: </h2>
-  <textarea id="notepad" rows="4" cols="50">Text in the text area</textarea>
+  <h2>Notepad: {{ notepadObj._id }}</h2>
+  <textarea id="notepad" rows="4" cols="50"> {{ notepadObj.text }} {{ notepadObj._id }}</textarea>
 </template>

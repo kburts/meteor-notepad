@@ -1,9 +1,7 @@
 Template.homepage.events({
-  'click #createNotebook': function () {
+  'click #createNotepad': function () {
     Meteor.call('createNotepad', function (error, results) {
-      console.log(error);
-      console.log(results);
+      console.log("Errors: ", error);
     });
-    console.log('creating notebook!!');
   }
 });
