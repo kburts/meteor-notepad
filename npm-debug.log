@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'mup' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'mup', null ]
+6 verbose cache add name=undefined spec="mup" args=["mup",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'mup',
+7 verbose parsed url   path: 'mup',
+7 verbose parsed url   href: 'mup' }
+8 silly lockFile 19bdb584-mup mup
+9 verbose lock mup /home/vagrant/.npm/19bdb584-mup.lock
+10 silly lockFile 19bdb584-mup mup
+11 silly lockFile 19bdb584-mup mup
+12 verbose addNamed [ 'mup', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 49f77549-mup mup@
+15 verbose lock mup@ /home/vagrant/.npm/49f77549-mup.lock
+16 silly addNameRange { name: 'mup', range: '*', hasData: false }
+17 verbose request where is /mup
+18 verbose request registry http://registry.npmjs.org/
+19 verbose request id 34d342a9e2eb60ec
+20 verbose url raw /mup
+21 verbose url resolving [ 'http://registry.npmjs.org/', './mup' ]
+22 verbose url resolved http://registry.npmjs.org/mup
+23 verbose request where is http://registry.npmjs.org/mup
+24 info trying registry request attempt 1 at 06:14:49
+25 http GET http://registry.npmjs.org/mup
+26 http 200 http://registry.npmjs.org/mup
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"AH3L7I4WD0NYZC89MXP0TQ3MF"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '59434',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Thu, 19 Feb 2015 06:15:15 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sjc3127-SJC',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1424326515.148123,VS0,VE33',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'mup', range: '*', hasData: true }
+29 silly addNameRange versions [ 'mup',
+29 silly addNameRange   [ '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.5',
+29 silly addNameRange     '0.1.6',
+29 silly addNameRange     '0.1.7',
+29 silly addNameRange     '0.1.8',
+29 silly addNameRange     '0.1.9',
+29 silly addNameRange     '0.1.10',
+29 silly addNameRange     '0.1.11',
+29 silly addNameRange     '0.1.12',
+29 silly addNameRange     '0.1.13',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.4.3',
+29 silly addNameRange     '0.4.4',
+29 silly addNameRange     '0.4.5',
+29 silly addNameRange     '0.4.6',
+29 silly addNameRange     '0.4.7',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.5.2',
+29 silly addNameRange     '0.5.3',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '0.6.4',
+29 silly addNameRange     '0.6.5',
+29 silly addNameRange     '0.6.7',
+29 silly addNameRange     '0.6.8',
+29 silly addNameRange     '0.6.9',
+29 silly addNameRange     '0.6.10',
+29 silly addNameRange     '0.6.11',
+29 silly addNameRange     '0.6.12',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.7.3',
+29 silly addNameRange     '0.7.4',
+29 silly addNameRange     '0.7.5',
+29 silly addNameRange     '0.7.6',
+29 silly addNameRange     '0.7.7',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1' ] ]
+30 verbose addNamed [ 'mup', '0.9.1' ]
+31 verbose addNamed [ '0.9.1', '0.9.1' ]
+32 silly lockFile 4cc5feb9-mup-0-9-1 mup@0.9.1
+33 verbose lock mup@0.9.1 /home/vagrant/.npm/4cc5feb9-mup-0-9-1.lock
+34 silly lockFile 4cc5feb9-mup-0-9-1 mup@0.9.1
+35 silly lockFile 4cc5feb9-mup-0-9-1 mup@0.9.1
+36 silly lockFile 49f77549-mup mup@
+37 silly lockFile 49f77549-mup mup@
+38 silly resolved [ { name: 'mup',
+38 silly resolved     version: '0.9.1',
+38 silly resolved     description: 'Production Quality Meteor Deployments',
+38 silly resolved     dependencies:
+38 silly resolved      { nodemiral: '0.3.x',
+38 silly resolved        cjson: '0.3.x',
+38 silly resolved        uuid: '1.4.x',
+38 silly resolved        colors: '0.6.x',
+38 silly resolved        rimraf: '2.x.x',
+38 silly resolved        underscore: '1.7.0' },
+38 silly resolved     bin: { mup: './bin/mup' },
+38 silly resolved     author:
+38 silly resolved      { name: 'Arunoda Susiripala',
+38 silly resolved        email: 'arunoda.susiripala@gmail.com' },
+38 silly resolved     repository: { type: 'git', url: 'git://github.com/arunoda/meteor-up.git' },
+38 silly resolved     license: 'MIT',
+38 silly resolved     readme: '# Meteor Up\n\n#### Production Quality Meteor Deployments\n\nMeteor Up (mup for short) is a command line tool that allows you to deploy any [Meteor](http://meteor.com) app to your own server. It supports only Debian/Ubuntu flavours and Open Solaris at the moments. (PRs are welcome)\n\n> Screencast: [How to deploy a Meteor app with Meteor Up (by Sacha Grief)](https://www.youtube.com/watch?v=WLGdXtZMmiI)\n\n**Table of Contents**\n\n- [Features](#features)\n- [Server Configuration](#server-configuration)\n- [Installation](#installation)\n- [Creating a Meteor Up Project](#creating-a-meteor-up-project)\n- [Example File](#example-file)\n- [Setting Up a Server](#setting-up-a-server)\n    - [Server Setup Details](#server-setup-details)\n- [Deploying an App](#deploying-an-app)\n    - [Deploy Wait Time](#deploy-wait-time)\n    - [Multiple Deployment Targets](#multiple-deployment-targets)\n- [Access Logs](#access-logs)\n- [Reconfiguring & Restarting](#reconfiguring--restarting)\n- [Accessing the Database](#accessing-the-database)\n- [Multiple Deployments](#multiple-deployments)\n- [Server Specific Environment Variables](#server-specific-environment-variables)\n- [SSL Support](#ssl-support)\n- [Updating](#updating)\n- [Troubleshooting](#troubleshooting)\n- [Binary Npm Module Support](#binary-npm-module-support)\n- [Additional Resources](#additional-resources)\n\n### Features\n\n* Single command server setup\n* Single command deployment\n* Multi server deployment\n* Environmental Variables management\n* Support for [`settings.json`](http://docs.meteor.com/#meteor_settings)\n* Password or Private Key(pem) based server authentication\n* Access, logs from the terminal (supports log tailing)\n* Support for multiple meteor deployments (experimental)\n\n### Server Configuration\n\n* Auto-Restart if the app crashed (using forever)\n* Auto-Start after the server reboot (using upstart)\n* Stepdown User Privileges\n* Revert to the previous version, if the deployment failed\n* Secured MongoDB Installation (Optional)\n* Pre-Installed PhantomJS (Optional)\n\n### Installation\n\n    npm install -g mup\n\nIf you are looking for password-based authentication, you need to [install sshpass](https://gist.github.com/arunoda/7790979) on your local development machine.\n\n### Creating a Meteor Up Project\n\n    mkdir ~/my-meteor-deployment\n    cd ~/my-meteor-deployment\n    mup init\n\nThis will create two files in your Meteor Up project directory:\n\n  * mup.json - Meteor Up configuration file\n  * settings.json - Settings for Meteor\'s [settings API](http://docs.meteor.com/#meteor_settings)\n\n`mup.json` is commented and easy to follow (it supports JavaScript comments).\n\n### Example File\n\n```js\n{\n  // Server authentication info\n  "servers": [\n    {\n      "host": "hostname",\n      "username": "root",\n      "password": "password"\n      // or pem file (ssh based authentication)\n      // WARNING: Keys protected by a passphrase are not supported\n      //"pem": "~/.ssh/id_rsa"\n      // Also, for non-standard ssh port use this\n      //"sshOptions": { "Port" : 49154 },\n      // server specific environment variables\n      "env": {}\n    }\n  ],\n\n  // Install MongoDB on the server. Does not destroy the local MongoDB on future setups\n  "setupMongo": true,\n\n  // WARNING: Node.js is required! Only skip if you already have Node.js installed on server.\n  "setupNode": true,\n\n  // WARNING: nodeVersion defaults to 0.10.33 if omitted. Do not use v, just the version number.\n  "nodeVersion": "0.10.33",\n\n  // Install PhantomJS on the server\n  "setupPhantom": true,\n\n  // Application name (no spaces).\n  "appName": "meteor",\n\n  // Location of app (local directory). This can reference \'~\' as the users home directory.\n  // i.e., "app": "~/Meteor/my-app",\n  // This is the same as the line below.\n  "app": "/Users/arunoda/Meteor/my-app",\n\n  // Configure environment\n  // ROOT_URL must be set to https://YOURDOMAIN.com when using the spiderable package & force SSL\n  // your NGINX proxy or Cloudflare. When using just Meteor on SSL without spiderable this is not necessary\n  "env": {\n    "PORT": 80,\n    "ROOT_URL": "http://myapp.com",\n    "MONGO_URL": "mongodb://arunoda:fd8dsjsfh7@hanso.mongohq.com:10023/MyApp",\n    "MAIL_URL": "smtp://postmaster%40myapp.mailgun.org:adj87sjhd7s@smtp.mailgun.org:587/"\n  },\n\n  // Meteor Up checks if the app comes online just after the deployment.\n  // Before mup checks that, it will wait for the number of seconds configured below.\n  "deployCheckWaitTime": 15\n}\n```\n\n### Setting Up a Server\n\n    mup setup\n\nThis will setup the server for the `mup` deployments. It will take around 2-5 minutes depending on the server\'s performance and network availability.\n\n#### Ssh based authentication\n\nPlease ensure your key file (pem) is not protected by a passphrase. Also the setup process will require NOPASSWD access to sudo. (Since Meteor needs port 80, sudo access is required.)\n\nYou can add your user to the sudo group:\n\n    sudo adduser *username*  sudo\n\nAnd you also need to add NOPASSWD to the sudoers file:\n\n    sudo visudo\n\n    # replace this line\n    %sudo  ALL=(ALL) ALL\n\n    # by this line\n    %sudo ALL=(ALL) NOPASSWD:ALL  \n\nWhen this process is not working you might encounter the following error:\n\n    \'sudo: no tty present and no askpass program specified\'\n\n#### Server Setup Details\n\nThis is how Meteor Up will configure the server for you based on the given `appName` or using "meteor" as default appName. This information will help you customize the server for your needs.\n\n* your app lives at `/opt/<appName>/app`\n* mup uses `upstart` with a config file at `/etc/init/<appName>.conf`\n* you can start and stop the app with upstart: `start <appName>` and `stop <appName>`\n* logs are located at: `/var/log/upstart/<appName>.log`\n* MongoDB installed and bound to the local interface (cannot access from the outside)\n* the database is named `<appName>`\n\nFor more information see [`lib/taskLists.js`](https://github.com/arunoda/meteor-up/blob/master/lib/taskLists.js).\n\n### Deploying an App\n\n    mup deploy\n\nThis will bundle the Meteor project and deploy it to the server.\n\n#### Deploy Wait Time\n\nMeteor Up checks if the deployment is successful or not just after the deployment. By default, it will wait 10 seconds before the check. You can configure the wait time with the `deployCheckWaitTime` option in the `mup.json`.\n\n#### Multiple Deployment Targets\n\nYou can use an array to deploy to multiple servers at once.\n\nTo deploy to *different* environments (e.g. staging, production, etc.), use separate Meteor Up configurations in separate directories, with each directory containing separate `mup.json` and `settings.json` files, and the `mup.json` files\' `app` field pointing back to your app\'s local directory.\n\n#### Custom Meteor Binary\n\nSometimes, you might be using `mrt`, or Meteor from a git checkout. By default, Meteor Up uses `meteor`. You can ask Meteor Up to use the correct binary with the `meteorBinary` option.\n\n~~~js\n{\n  ...\n  "meteorBinary": "~/bin/meteor/meteor"\n  ...\n}\n~~~\n\n### Access Logs\n\n    mup logs -f\n\nMup can tail logs from the server and supports all the options of `tail`.\n\n### Reconfiguring & Restarting\n\nAfter you\'ve edit environmental variables or `settings.json`, you can reconfigure the app without deploying again. Use the following command to do update the settings and restart the app.\n\n    mup reconfig\n\nIf you want to stop, start or restart your app for any reason, you can use the following commands to manage it.\n\n    mup stop\n    mup start\n    mup restart\n\n### Accessing the Database\n\nYou can\'t access the MongoDB from the outside the server. To access the MongoDB shell you need to log into your server via SSH first and then run the following command:\n\n    mongo appName\n\n### Server Specific Environment Variables\n\nIt is possible to provide server specific environment variables. Add the `env` object along with the server details in the `mup.json`. Here\'s an example:\n\n~~~js\n{\n  "servers": [\n    {\n      "host": "hostname",\n      "username": "root",\n      "password": "password"\n      "env": {\n        "SOME_ENV": "the-value"\n      }\n    }\n\n  ...\n}\n~~~\n\nBy default, Meteor UP adds `CLUSTER_ENDPOINT_URL` to make [cluster](https://github.com/meteorhacks/cluster) deployment simple. But you can override it by defining it yourself.\n\n### Multiple Deployments\n\nMeteor Up supports multiple deployments to a single server. Meteor Up only does the deployment; if you need to configure subdomains, you need to manually setup a reverse proxy yourself.\n\nLet\'s assume, we need to deploy production and staging versions of the app to the same server. The production app runs on port 80 and the staging app runs on port 8000.\n\nWe need to have two separate Meteor Up projects. For that, create two directories and initialize Meteor Up and add the necessary configurations.\n\nIn the staging `mup.json`, add a field called `appName` with the value `staging`. You can add any name you prefer instead of `staging`. Since we are running our staging app on port 8000, add an environment variable called `PORT` with the value 8000.\n\nNow setup both projects and deploy as you need.\n\n### SSL Support\n\nMeteor Up has the built in SSL support. It uses [stud](https://github.com/bumptech/stud) SSL terminator for that. First you need to get a SSL certificate from some provider. This is how to do that:\n\n* [First you need to generate a CSR file and the private key](http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl)\n* Then purchase a SSL certificate.\n* Then generate a SSL certificate from your SSL providers UI.\n* Then that\'ll ask to provide the CSR file. Upload the CSR file we\'ve generated.\n* When asked to select your SSL server type, select it as nginx.\n* Then you\'ll get a set of files (your domain certificate and CA files).\n\nNow you need combine SSL certificate(s) with the private key and save it in the mup config directory as `ssl.pem`. Check this [guide](http://alexnj.com/blog/configuring-a-positivessl-certificate-with-stud.html) to do that.\n\nThen add following configuration to your `mup.json` file.\n\n~~~js\n{\n  ...\n\n  "ssl": {\n    "pem": "./ssl.pem",\n    //"backendPort": 80\n  }\n\n  ...\n}\n~~~\n\nNow, simply do `mup setup` and now you\'ve the SSL support.\n\n> * By default, it\'ll think your Meteor app is running on port 80. If it\'s not, change it with the `backendPort` configuration field.\n> * SSL terminator will run on the default SSL port `443`\n> * If you are using multiple servers, SSL terminators will run on the each server (This is made to work with [cluster](https://github.com/meteorhacks/cluster))\n> * Right now, you can\'t have multiple SSL terminators running inside a single server\n\n### Updating\n\nTo update `mup` to the latest version, just type:\n\n    npm update mup -g\n\nYou should try and keep `mup` up to date in order to keep up with the latest Meteor changes. But note that if you need to update your Node version, you\'ll have to run `mup setup` again before deploying.\n\n### Troubleshooting\n\n#### Check Logs\nIf you suddenly can\'t deploy your app anymore, first use the `mup logs -f` command to check the logs for error messages.\n\nOne of the most common problems is your Node version getting out of date. In that case, see “Updating” section above.\n\n#### Verbose Output\nIf you need to see the output of `meteor-up` (to see more precisely where it\'s failing or hanging, for example), run it like so:\n\n    DEBUG=* mup <command>\n\nwhere `<command>` is one of the `mup` commands such as `setup`, `deploy`, etc.\n\n### Binary Npm Module Support\n\nSome of the Meteor core packages as well some of the community packages comes with npm modules which has been written in `C` or `C++`. These modules are platform dependent.\nSo, we need to do special handling, before running the bundle generated from `meteor bundle`.\n(meteor up uses the meteor bundle)\n\nFortunately, Meteor Up **will take care** of that job for you and it will detect binary npm modules and re-build them before running your app on the given server.\n\n> * Meteor 0.9 adds a similar feature where it allows package developers to publish their packages for different architecures, if their packages has binary npm modules.\n> * As a side effect of that, if you are using a binary npm module inside your app via `meteorhacks:npm` package, you won\'t be able to deploy into `*.meteor.com`.\n> * But, you\'ll be able to deploy with Meteor Up since we are re-building binary modules on the server.\n\n### Additional Resources\n\n* [Using Meteor Up with Nitrous.io](https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-Nitrous.io)\n* [Change Ownership of Additional Directories](https://github.com/arunoda/meteor-up/wiki/Change-Ownership-of-Additional-Directories)\n* [Using Meteor Up with NginX vhosts](https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts)\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     bugs: { url: 'https://github.com/arunoda/meteor-up/issues' },
+38 silly resolved     homepage: 'https://github.com/arunoda/meteor-up',
+38 silly resolved     _id: 'mup@0.9.1',
+38 silly resolved     _from: 'mup@' } ]
+39 info install mup@0.9.1 into /usr/lib
+40 info installOne mup@0.9.1
+41 verbose lib/node_modules/mup unbuild
+42 verbose tar unpack /home/vagrant/.npm/mup/0.9.1/package.tgz
+43 silly lockFile 7ec4182e-tar-usr-lib-node-modules-mup tar:///usr/lib/node_modules/mup
+44 verbose lock tar:///usr/lib/node_modules/mup /home/vagrant/.npm/7ec4182e-tar-usr-lib-node-modules-mup.lock
+45 silly lockFile bf4ca506-agrant-npm-mup-0-9-1-package-tgz tar:///home/vagrant/.npm/mup/0.9.1/package.tgz
+46 verbose lock tar:///home/vagrant/.npm/mup/0.9.1/package.tgz /home/vagrant/.npm/bf4ca506-agrant-npm-mup-0-9-1-package-tgz.lock
+47 silly gunzTarPerm modes [ '775', '664' ]
+48 error Error: EACCES, mkdir '/usr/lib/node_modules/mup'
+48 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/mup']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/usr/lib/node_modules/mup',
+48 error   fstream_type: 'Directory',
+48 error   fstream_path: '/usr/lib/node_modules/mup',
+48 error   fstream_class: 'DirWriter',
+48 error   fstream_stack:
+48 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+48 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+48 error      'Object.oncomplete (fs.js:108:15)' ] }
+49 error Please try running this command again as root/Administrator.
+50 error System Linux 3.2.0-23-generic
+51 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "mup"
+52 error cwd /home/vagrant/meteor/notepad
+53 error node -v v0.10.36
+54 error npm -v 1.4.28
+55 error path /usr/lib/node_modules/mup
+56 error fstream_path /usr/lib/node_modules/mup
+57 error fstream_type Directory
+58 error fstream_class DirWriter
+59 error code EACCES
+60 error errno 3
+61 error stack Error: EACCES, mkdir '/usr/lib/node_modules/mup'
+62 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+62 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+62 error fstream_stack Object.oncomplete (fs.js:108:15)
+63 verbose exit [ 3, true ]

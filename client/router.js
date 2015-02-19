@@ -15,7 +15,15 @@ Router.map(function() {
   this.route('notepads');
 });
 
-Router.route('/notepad/:_id', function () {
-  var notepad = Notepad.findOne({_id: this.params._id});
-  this.render('notepad', {data: notepad});
+Router.route('/notepad/:_id', {
+  name: 'notepad',
+  waitOn: function () {
+    return Meteor.subscribe('notepad', this.params._id);
+  },
+  data: function () {
+    return Notepad.findOne({_id: this.params._id});
+  },
+  action: function () {
+    this.render();
+  }
 });
