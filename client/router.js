@@ -7,12 +7,18 @@ Router.configure({
 });
 
 Router.map(function() {
-
-  this.route('homepage', {
-    path: '/'
-  });
-
   this.route('notepads');
+});
+
+Router.route('/', {
+  name: 'homepage',
+  waitOn: function() {
+    return Meteor.subscribe('recentNotepads');
+  },
+  data: function() {
+    return {recentNotepads: Notepad.find()};
+    //Notepad.find()};
+  }
 });
 
 Router.route('/notepad/:_id', {

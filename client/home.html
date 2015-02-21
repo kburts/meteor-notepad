@@ -2,5 +2,16 @@
   <h2>Meteor Notebook App.</h2>
 
   <p>Click <button id="createNotepad">Here</button> to create a new notebook!</p>
+
+  <h2>Recent Notebooks:</h2>
+
+  <ul>
+    {{# each recentNotepads }}
+    <li>
+      <a href="/notepad/{{ _id }}">{{ title }}</a>
+      {{ modified }}
+    </li>
+    {{/ each }}
+  </ul>
 </template>
 
