@@ -27,7 +27,7 @@ Router.route('/notepad/:_id', {
     return Meteor.subscribe('notepad', this.params._id);
   },
   data: function () {
-    return Notepad.findOne({_id: this.params._id});
+    return {currNotepad: Notepad.findOne({_id: this.params._id})};
   },
   action: function () {
     this.render();

@@ -1,5 +1,5 @@
 <template name="notepad">
-  <h2>Notepad: {{ _id }}</h2>
-  <p>Modified: {{ modified }}</p>
-  <textarea id="notepad" rows="4" cols="50">{{ text }}</textarea>
+  <h2>Notepad: {{ currNotepad._id }}</h2>
+  <p>Modified: {{ currNotepad.modified }}</p>
+  <textarea id="notepad" rows="4" cols="50">{{ currNotepad.text }}</textarea>
 </template>
