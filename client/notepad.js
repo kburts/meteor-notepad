@@ -20,6 +20,10 @@ Template.notepad.helpers({
   }
 });
 
+Template.notepad.rendered = function () {
+  $('#notepad').val(Iron.controller().data().currNotepad.text);
+}
+
 Session.set("countdown", false);
 
 // Events
