@@ -1,5 +1,22 @@
 <template name="notepad">
-  <h2>Notepad: {{ currNotepad._id }}</h2>
+  <h2>Notepad: {{ currNotepad._id }} by: {{ currNotepad.created_by.username }}</h2>
+  {{# if isNotepadOwner }}
+    <form id="update-as-owner">
+      <input type="text" name="title" value={{ currNotepad.title }}>
+      <input type="checkbox" name="hidden" checked={{ currNotepad.hidden }}>
+      <input type="submit" value="submit">
+    </form>
+
+    <!--
+    <input type="text" id="title" value={{ currNotepad.title }}>
+    hidden: <input type="checkbox" id="hidden" checked={{ currNotepad.hidden }}>
+    <button type="button" id="submitUpdate">Submit</button>
+    -->
+  {{ else }}
+    <h2>{{ currNotepad.title }}</h2>
+    hidden: <input type="checkbox" id="hidden" checked={{ currNotepad.hidden }} disabled="disabled">
+  {{/ if }}
+  
   <p>Modified: {{ currNotepad.modified }}</p>
   <textarea id="notepad" rows="4" cols="50">{{ currNotepad.text }}</textarea>
 </template>
