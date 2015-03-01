@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "openpgp": {
+      "version": "http://registry.npmjs.org/openpgp/-/openpgp-0.11.0.tgz",
+      "dependencies": {
+        "es6-promise": {
+          "version": "http://registry.npmjs.org/es6-promise/-/es6-promise-1.0.0.tgz"
+        },
+        "node-localstorage": {
+          "version": "http://registry.npmjs.org/node-localstorage/-/node-localstorage-0.3.6.tgz"
+        },
+        "zlibjs": {
+          "version": "http://registry.npmjs.org/zlibjs/-/zlibjs-0.2.0.tgz"
+        }
+      }
+    }
+  }
+}

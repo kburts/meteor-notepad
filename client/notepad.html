@@ -18,5 +18,9 @@
   {{/ if }}
   
   <p>Modified: {{ currNotepad.modified }}</p>
-  <textarea id="notepad" rows="4" cols="50">{{ notepadText }}</textarea>
+  <textarea id="notepad" rows="4" cols="50">{{ currNotepad.text }}</textarea>
+  <br>
+  <button id="saveCurrNotepad" type="button">Save</button>
+  <button id="crypto" type="button">Crypto</button>
+  <p>Key: {{ key }}</p>
 </template>

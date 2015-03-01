@@ -20,14 +20,40 @@ Template.notepad.helpers({
   }
 });
 
+/*
 Template.notepad.rendered = function () {
-  $('#notepad').val(Iron.controller().data().currNotepad.text);
+  //$('#notepad').val(Iron.controller().data().currNotepad.text);
+  console.log("Template rendered!");
+  Meteor.setInterval(
+    function () {
+      Meteor.call('syncNotepadFromServer', Session.get('lastUpdated'));
+      console.log("intervaling..");
+    }, 1000);
 }
+*/
 
-Session.set("countdown", false);
 
 // Events
 Template.notepad.events({
+  'click #saveCurrNotepad': function (event, template) {
+    var controller = Iron.controller();
+    var notepad = controller.data().currNotepad;
+    notepad.text = $('#notepad').val();
+    console.log(notepad.text);
+
+    updateNotepad(notepad);
+  },
+  'click #crypto': function (event, template) {
+   
+    Meteor.call('generateKeyPair', function (error, result) {
+      if (error) {
+        console.log("ERROR!", error);
+      }
+      console.log(result);
+    });
+  },
+  /*
+   * Update on keypress - Replaced with save button for now.
   'keypress #notepad': function (event, template) {
     var controller = Iron.controller();
     var notepad = controller.data().currNotepad;
@@ -42,7 +68,9 @@ Template.notepad.events({
         }, 200
       );
     }
+    Session.set('lastUpdated', new Date);
   },
+  */
   'submit #update-as-owner': function (event, template) {
     event.preventDefault();
 

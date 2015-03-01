@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'view', 'openpgpjs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink /usr/bin/node
+5 verbose request where is /openpgpjs
+6 verbose request registry http://registry.npmjs.org/
+7 verbose request id f9580b2f82860543
+8 verbose url raw /openpgpjs
+9 verbose url resolving [ 'http://registry.npmjs.org/', './openpgpjs' ]
+10 verbose url resolved http://registry.npmjs.org/openpgpjs
+11 verbose request where is http://registry.npmjs.org/openpgpjs
+12 info trying registry request attempt 1 at 03:57:44
+13 http GET http://registry.npmjs.org/openpgpjs
+14 http 404 http://registry.npmjs.org/openpgpjs
+15 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 verbose headers   'content-type': 'application/json',
+15 verbose headers   'cache-control': 'max-age=0',
+15 verbose headers   'content-length': '52',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Sat, 28 Feb 2015 03:57:44 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   age: '0',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1425095864.604456,VS0,VE33' }
+16 silly registry.get cb [ 404,
+16 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+16 silly registry.get     'content-type': 'application/json',
+16 silly registry.get     'cache-control': 'max-age=0',
+16 silly registry.get     'content-length': '52',
+16 silly registry.get     'accept-ranges': 'bytes',
+16 silly registry.get     date: 'Sat, 28 Feb 2015 03:57:44 GMT',
+16 silly registry.get     via: '1.1 varnish',
+16 silly registry.get     age: '0',
+16 silly registry.get     connection: 'keep-alive',
+16 silly registry.get     'x-served-by': 'cache-sjc3124-SJC',
+16 silly registry.get     'x-cache': 'MISS',
+16 silly registry.get     'x-cache-hits': '0',
+16 silly registry.get     'x-timer': 'S1425095864.604456,VS0,VE33' } ]
+17 error 404 404 Not Found: openpgpjs
+17 error 404
+17 error 404 'openpgpjs' is not in the npm registry.
+17 error 404 You should bug the author to publish it
+17 error 404
+17 error 404 Note that you can also install from a
+17 error 404 tarball, folder, or http url, or git url.
+18 error System Linux 3.2.0-23-generic
+19 error command "/usr/bin/node" "/usr/bin/npm" "view" "openpgpjs"
+20 error cwd /home/vagrant/meteor/notepad
+21 error node -v v0.10.36
+22 error npm -v 1.4.28
+23 error code E404
+24 verbose exit [ 1, true ]
