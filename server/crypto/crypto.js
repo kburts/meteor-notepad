@@ -14,16 +14,37 @@ function generateKeysPromiseHandler (promise) {
 }
 
 Meteor.methods({
-  generateKeyPair: function (keyName, userId, passphrase) {
+  generateKeyPair: function (keyName, passphrase) {
+    var userId = Meteor.userId();
     var keys = openpgp.generateKeyPair({
       numBits: 1024, // Need to test speed on VPS.
       userId: userId,
       passphrase: passphrase
     });
-    return keys;
+    keys = generateKeysPromiseHandler(keys);
+    var public = PublicKeys.insert({
+      key: keys.public,
+      userId: userId,
+      added: new Date()
+    });
+    var private = PrivateKeys.insert({
+      key: keys.private,
+      userId: userId,
+      added: new Date()
+    });
+
+    return {public: public, private: private};
   },
-  encrypt: function (message) {
-    console.log("got message to encrypt!", message);
-    return 'returning message';
+  encrypt: function (message, publicKeyId) {
+    var pubicKey = PublicKeys.findOne({
+      _id: publicKeyId,
+      userId: Meteor.userId()
+    });
+    openpgpPublic = openpgp.readArmored(publicKey.key);
+    openpgp.encryptMessage(openphpPublic.keys, message).then(function (message) {
+      console.log("Encrypted message:", message);
+    }).catch(function (error) {
+      throw new Meteor.Error("Could no encrypt message", error);
+    });
   }
 });

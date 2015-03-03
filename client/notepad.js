@@ -17,20 +17,12 @@ Template.notepad.helpers({
       return true;
     console.log(Iron.controller().data().currNotepad.created_by, Meteor.user());
     return false;
+  },
+  key: function () {
+    return Session.get('key');
   }
 });
 
-/*
-Template.notepad.rendered = function () {
-  //$('#notepad').val(Iron.controller().data().currNotepad.text);
-  console.log("Template rendered!");
-  Meteor.setInterval(
-    function () {
-      Meteor.call('syncNotepadFromServer', Session.get('lastUpdated'));
-      console.log("intervaling..");
-    }, 1000);
-}
-*/
 
 
 // Events
@@ -45,11 +37,14 @@ Template.notepad.events({
   },
   'click #crypto': function (event, template) {
    
-    Meteor.call('generateKeyPair', function (error, result) {
+    Meteor.call('generateKeyPair', 'testKey', 'testPass', function (error, result) {
       if (error) {
         console.log("ERROR!", error);
       }
-      console.log(result);
+      else {
+        Session.set('key', result);
+        console.log(result);
+      }
     });
   },
   /*
